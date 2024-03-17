@@ -1,4 +1,4 @@
-// Prevent animation on load
+
 setTimeout(() => {
     document.body.classList.remove("preload");
   }, 500);
@@ -41,7 +41,7 @@ setTimeout(() => {
   let scoreUser = localStorage.getItem('user');
   let scoreComputer = localStorage.getItem('computer');
 
-  // Game Logic
+  //  Logic
   choiceButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const choiceName = button.dataset.choice;
@@ -145,7 +145,7 @@ setTimeout(() => {
     resultsDiv.classList.toggle("show-winner");
   }
   
-  // Show/Hide Rules
+  // Show/Hide 
   btnRules.addEventListener("click", () => {
     console.log(modalRules)
     modalRules.classList.toggle("show-modal");
